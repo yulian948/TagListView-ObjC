@@ -30,6 +30,17 @@
     return self;
 }
 
+- (instancetype) initWithTitle:(NSString *)title maxWidth:(CGFloat)maxWidth {
+    self = [super init];
+    if(self) {
+        [self setTitle:title forState:UIControlStateNormal];
+        [self setMaxWidth:maxWidth];
+        [self setupView];
+        
+    }
+    return self;
+}
+
 - (void)setupView {
     CGSize intrinsicSize = [self intrinsicContentSize];
     self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, intrinsicSize.width, intrinsicSize.height);

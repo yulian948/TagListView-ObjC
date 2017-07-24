@@ -164,7 +164,7 @@
 }
 
 - (TagView *)addTag:(NSString *)title {
-    TagView *tagView = [[TagView alloc] initWithTitle:title];
+    TagView *tagView = [[TagView alloc] initWithTitle:title maxWidth:self.frame.size.width];
     
     [tagView setTextColor: [self textColor]];
     [tagView setBackgroundColor: [self tagBackgroundColor]];

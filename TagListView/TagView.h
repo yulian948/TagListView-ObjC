@@ -26,6 +26,7 @@ IB_DESIGNABLE
 @property (nonatomic, strong) IBInspectable UIColor *selectedBackgroundColor;
 @property (nonatomic, strong) IBInspectable UIColor *selectedBorderColor;
 @property (nonatomic, strong) UIFont *textFont;
+@property (nonatomic) CGFloat maxWidth;
 
 @property (nonatomic, copy) void (^onTap)(TagView *);
 
